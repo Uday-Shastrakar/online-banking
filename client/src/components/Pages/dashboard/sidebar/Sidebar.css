@@ -1,0 +1,18 @@
+/* Sidebar Styles */
+.sidebar-container {
+    width: 250px;
+    background-color: rgba(57, 154, 219, 0.5);
+    color: #fff;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .sidebar-item {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .sidebar-item:hover {
+    text-decoration: underline;
+  }
+  
