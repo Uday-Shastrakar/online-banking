@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: "email"
+  config:
+    import: "optional:configserver:http://192.168.1.100:9092/"
+
+  mail:
+    host: 192.168.1.100
+    port: 1025
+    username: numsbank@gmail.com
+    password: # No password required for MailHog
+    default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          auth: false
+          starttls:
+            enable: false
+        mime:
+          charset: UTF-8
+
+
+
+server:
+  port: 9097
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://192.168.1.100:8761/eureka
